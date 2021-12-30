@@ -1,59 +1,312 @@
 <!DOCTYPE html>
-<html lang="en">
-
+<html>
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Vue事件处理器</title>
-    <script src="https://cdn.staticfile.org/vue/2.2.2/vue.min.js"></script>
+ 
+<title>Brand html5 Multipurpose Landing Page for Apps</title>
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+
+<!-- CSS Files -->
+<link href="css/bootstrap.min.css" rel="stylesheet" media="screen">
+<link href="css/font-awesome.min.css" rel="stylesheet">
+<link href="fonts/icon-7-stroke/css/pe-icon-7-stroke.css" rel="stylesheet">
+<link href="css/animate.css" rel="stylesheet" media="screen">
+<link href="css/owl.theme.css" rel="stylesheet">
+<link href="css/owl.carousel.css" rel="stylesheet">
+ 
+<link href="css/styles.css" rel="stylesheet" media="screen">    
+
+<!-- Google Fonts --> 
+<link href='http://fonts.googleapis.com/css?family=Open+Sans:400,300,600,700' rel='stylesheet' type='text/css'>
+<link href='http://fonts.googleapis.com/css?family=Alegreya+Sans:100,300,400,700' rel='stylesheet' type='text/css'>
+
+
+<!-- Font Awesome -->
+<link href="http://maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css" rel="stylesheet"> 
 </head>
+  
+<body data-spy="scroll" data-target="#navbar-scroll">
+ 
+ <div id="top"></div>
 
-<body>
-    <h2 style="text-align: center;">APP跳转微信小程序工具</h2>
-    <div id="app">
-        <h3 style="font-style:oblique">简介：</h3>
-        <p>{{intro}}</p>
-        <h3 style="font-style:oblique">功能：</h3>
-        <ol>
-            <li v-for="content in contents">{{content.name}}</li>
-        </ol>
-        <h3 style="font-style:oblique">图片效果：</h3>
-        <div>
-            <img style="height: 480px; width: 20%;"
-                src="img/01.jpeg" />
-            <img style="height: 480px; width: 20%; margin-left: 3%;"
-                src="img/02.png" />
-            <img style="height: 480px; width: 20%; margin-left: 3%;"
-                src="img/03.png" />
-            <img style="height: 480px; width: 20%; margin-left: 3%;"
-                src="img/04.png" />
-        </div>
-    </div>
-    <footer style="text-align: center; margin-top: 2%;">
-        Copyright © 2012 - 2021 HuaTeng.All Rights Reserved.
-        <br />
-        华腾科技有限公司版权所有
-    </footer>
-</body>
-<script>
-    Vue.component('child', {
-        props: ['message'],
-        template: '<span>{{message}}</span>'
-    })
-    new Vue({
-        el: "#app",
-        data: {
-            intro: '这是一款用于从当前APP跳转到微信小程序的应用工具，其主要目的是看是否能手机应用跳转微信小程序并与之进行相应的交互。',
-            contents: [
-                {name : '当前APP跳转微信小程序'},
-                {name : '从微信接受返回数据'},
-                {name : '当前APP向微信发送数据'},
-                {name : '检查微信是否支持订阅消息'}
-            ]
-        }
-    })
+<!-- NAVIGATION -->
+<div id="menu">
+	<nav class="navbar-wrapper navbar-default" role="navigation">
+		<div class="container">
+			  <div class="navbar-header">
+				<button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-themers">
+				  <span class="sr-only">Toggle navigation</span>
+				  <span class="icon-bar"></span>
+				  <span class="icon-bar"></span>
+				  <span class="icon-bar"></span>
+				</button>
+			  </div>
+	 
+			  <div id="navbar-scroll" class="collapse navbar-collapse navbar-themers navbar-right">
+				<ul class="nav navbar-nav">
+					<li><a href="#intro">关于</a></li>
+					<li><a href="#feature">特征</a></li>
+					<li><a href="#subscribe">订阅</a></li>
+					<li><a href="#screenshot">应用截图</a></li>
+					<li><a href="#download">下载</a></li>
+					<li><a href="#contact">联系我们</a></li>
+				</ul>
+			  </div>
+		</div>
+	</nav>
+</div>
+ 
+<div class="fullscreen landing parallax banner" style="background-image:url('images/bg.jpg');" data-img-width="2000" data-img-height="1325" data-diff="100">
+	
+	<div class="overlay">
+		<div class="container">
+			<div class="row">
+				
+				
+				
+				<div class="col-md-6">
+				 
+						<h1 class="wow fadeInLeft">
+						跳小跳
+						</h1>
+ 
+					<div class="landing-text wow fadeInLeft">
+						<p>这是一款用于从当前APP跳转到微信小程序的应用工具，其主要目的是看是否能手机应用跳转微信小程序并与之进行相应的数据通信和交互！</p>
+					</div>				  
 
-</script>
+					<!-- header button -->
+					<div class="head-btn wow fadeInLeft">
+						<a href="#" class="btn-primary play-market">
+						<i class="fa fa-android"></i> <span>下载开放中...敬请期待</span>
+						</a>
+					</div>
+	
+					 				
 
+				</div> 
+				
+				<!-- phone image -->
+				<div class="col-md-6">
+				<img src="images/header-phone.png" alt="phone" class="header-phone img-responsive wow fadeInRight">
+				</div>
+			</div>
+		</div> 
+	</div> 
+</div>
+   
+<!-- intro section -->
+<div id="intro">
+		<div class="container">
+		<div class="row">
+	
+	<!-- feature image -->
+			<div class="col-md-6 feature-2-pic wow fadeInLeft">
+				<img src="images/feature2-image.jpg" alt="image" class="img-responsive">
+			</div>	
+			
+			<!-- feature content -->
+			<div class="col-md-6 wow fadeInRight">
+				<h2>基础功能介绍：</h2>
+				<p>点击按钮从当前应用跳转到微信小程序界面</p>
+				<p>检查微信是否支持订阅消息</p>
+				<p>从当前应用发送文本，图片，音乐等数据给微信</p>
+				<p>从微信接受响应返回的数据</p>
+				
+					<div class="btn-section"><a href="#download" class="btn-default">现在下载</a></div>
+		
+			</div>
+			 			  
+		</div>			  
+  
+	</div>
+</div>
+
+<!-- feature section -->
+<div id="feature">
+	<div class="container">
+		<div class="row">
+			<div class="col-md-10 col-md-offset-1 col-sm-12 text-center feature-title">
+
+			<!-- feature title -->
+				<h2>简洁而又实用的功能特性</h2>
+				<p>这是一款拥有着令人惊叹的使用工具类安卓应用，将给你带来非凡的体验。</p>
+			</div>
+		</div>
+		<div class="row row-feat">
+			
+			<div class="col-md-12">
+
+				<!-- feature 1 -->
+				<div class="col-sm-4 feat-list">
+					<i class="fa fa-paint-brush wow fadeInUp"></i>
+					<div class="inner">
+						<h4>自由定义</h4>
+						<p>客户可以自由自在的定义他们需要的功能和需要传输的数据。
+						</p>
+					</div>
+				</div>
+			
+				<!-- feature 2 -->
+				<div class="col-sm-4 feat-list">
+					<i class="fa fa-rss wow fadeInUp" data-wow-delay="0.2s"></i>
+					<div class="inner">
+						<h4>响应设计</h4>
+						<p>响应设计让该应用程序可以完美的适配市面上90%以上的安卓设备。</p>
+					</div>
+				</div>
+			
+				<!-- feature 3 -->
+				<div class="col-sm-4 feat-list"> 
+					<i class="fa fa-recycle wow fadeInUp" data-wow-delay="0.4s"></i>
+					<div class="inner">
+						<h4>非凡设计</h4>
+						<p>令人赞叹的设计给客户带来非凡的使用体验和视觉上的极致享受。</p>
+					</div>
+				</div>
+			
+				
+			</div>
+		</div>
+	</div>
+</div> 
+
+<!-- subscribe section -->
+<div id="subscribe">
+	<div class="subscribe fullscreen parallax" style="background-image:url('images/bg.jpg');" data-img-width="1920" data-img-height="1281" data-diff="100">
+		<div class="overlay">
+			<div class="container">
+
+				<!-- mail icon -->
+				<div class="col-md-4 col-md-offset-4 text-center">
+				<i class="fa fa-envelope-o letter wow fadeInUp"></i>
+				</div>
+				<div class="col-md-8 col-md-offset-2 text-center">
+					<p>您可以留下您的邮箱，这样将第一时间收到有关该应用的消息：）</p>
+
+					<!-- subscribe form -->
+					<div class="subscribe-form wow fadeInUp">
+						<form class="news-letter mailchimp" action="" role="form" method="POST">
+						<input type="hidden" name="u" value="">
+						<input type="hidden" name="id" value="">
+						<input class="form-control" type="email" name="" placeholder="您的邮箱..." required="">
+							<button type="submit" class="subscribe-btn btn">订阅</button>
+						</form>
+					</div>					
+				</div>
+
+			</div>	
+		</div>
+	</div>
+</div>
+
+<!-- screenshot section -->
+<div id="screenshot">
+	<div class="container">
+		<div class="text-center">
+			<h2 class="wow fadeInLeft">应用截图</h2>
+			<div class="title-line wow fadeInRight"></div>
+		</div>
+		<div class="row screenshots">
+			
+			<div id="screenshots" class="owl-carousel">
+
+				<!-- screenshot images -->
+				<div class="screen wow fadeInUp"> 
+					<img style="height: 440px;" src="images/img1.jpeg" alt="Screenshot"></>
+				</div>
+				
+				<div class="screen wow fadeInUp" data-wow-delay="0.1s">
+					<img style="height: 440px;" src="images/img2.png" alt="Screenshot"></a>
+				</div>
+				
+				<div class="screen wow fadeInUp" data-wow-delay="0.2s">
+					<img style="height: 440px;" src="images/img3.png" alt="Screenshot"></a>
+				</div>
+				
+				<div class="screen wow fadeInUp" data-wow-delay="0.3s">
+					<img style="height: 440px;" src="images/img4.png" alt="Screenshot"></a>
+				</div>
+				
+			</div>
+		</div>
+	</div>
+</div>
+<!-- download section -->
+<div id="download">
+	<div class="action fullscreen parallax" style="background-image:url('images/bg.jpg');" data-img-width="2000" data-img-height="1334" data-diff="100">
+		<div class="overlay downloadSection">
+			<div class="container">
+				<div class="row">
+					<div class="col-md-8 col-md-offset-2 col-sm-12 text-center">
+						<h2 class="wow fadeInLeft">现在免费下载跳小跳！</h2>
+						<p class="download-text wow fadeInRight">跳小跳应用程序目前还在测试和完善阶段，下载链接会在之后开放，同时也会上线各大应用商店。苹果版本也在紧密锣鼓的开发当中。</p>
+						<div class="btn-section">
+						
+						<a href="#" class="btn-primary app-store">
+						<i class="fa fa-apple"></i> <span> 敬请期待</span>
+						</a>
+						<a href="#" class="btn-primary play-market">
+						<i class="fa fa-android"></i> <span> 敬请期待</span>
+						</a>
+						
+						</div>
+					</div>					
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
+
+<!-- contact section -->
+<div id="contact">
+	<div class="action fullscreen parallax" style="background-color:gray;" data-img-width="2000" data-img-height="1334" data-diff="100">
+		<div class="overlay downloadSection">
+			<div class="container">
+				<div class="row">
+					<div class="col-md-8 col-md-offset-2 col-sm-12 text-center">
+						<h2 class="wow fadeInLeft">联系我们</h2>
+						<p class="download-text wow fadeInRight">QQ：200807490</p>
+						<p class="download-text wow fadeInRight">邮箱：200807490@qq.com</p>
+						<p class="download-text wow fadeInRight">电话：0871-6564600</p>
+						<div class="btn-section">
+						
+						<button class="btn-primary app-store"  onclick="onlineService()">
+						<i class="fa fa-phone"></i> <span> 在线客服</span>
+						</button>
+						</div>
+					</div>					
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
+  
+<!-- footer -->
+<footer id="footer">
+	<div class="container">
+		<div>
+			<!-- social links -->	
+			<div class="text-center wow fadeInUp" style="font-size: 14px; text-align: center;">版权所有© 2013-2021 中软国际科技服务有限公司</div>
+			<a href="#" class="scrollToTop"><i class="fa fa-arrow-circle-o-up"></i></a>
+		</div>	
+	</div>	
+</footer>
+	
+	<!-- javascript files -->
+    <script src="js/jquery.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/custom.js"></script>
+    <script src="js/jquery.sticky.js"></script>
+	<script src="js/wow.min.js"></script>
+	<script src="js/owl.carousel.min.js"></script>
+	<script src="js/ekko-lightbox-min.js"></script>
+	<script type="text/javascript">
+	$(document).delegate('*[data-toggle="lightbox"]', 'click', function(event) { event.preventDefault(); $(this).ekkoLightbox(); }); 
+	</script>
+	<script>
+		new WOW().init();
+		function onlineService(){
+			alert('暂未开放！');
+		}
+	</script>
+  </body>
 </html>
